@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convierte tu WhatsApp en una Máquina de Citas y Ventas | Fedora™ Studio</title>
+    <meta name="description" content="Respondemos tus mensajes de WhatsApp en menos de 1 minuto, calificamos al cliente, agendamos la cita y avisamos a tu equipo. Desarrollado por Fedora™ Studio en República Dominicana.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#ecfdf5',
+                            100: '#d1fae5',
+                            500: '#10b981',
+                            600: '#059669',
+                            700: '#047857',
+                            900: '#064e3b',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-emerald-500 selection:text-white">
+
+    <!-- NAVBAR -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <div class="w-9 h-9 rounded-lg bg-emerald-600 flex items-center justify-center text-white font-bold text-xl">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div>
+                    <span class="font-extrabold text-base tracking-tight text-slate-900 block leading-tight">Fedora™ Studio</span>
+                    <span class="text-[10px] text-emerald-600 font-bold uppercase tracking-wider block">Business Intelligent Solutions</span>
+                </div>
+            </div>
+            
+            <nav class="hidden md:flex items-center gap-7 text-sm font-semibold text-slate-600">
+                <a href="#como-funciona" class="hover:text-emerald-600 transition">Cómo funciona</a>
+                <a href="#demo-interactiva" class="hover:text-emerald-600 transition">Demostración</a>
+                <a href="#sectores" class="hover:text-emerald-600 transition">Sectores</a>
+                <a href="#planes" class="hover:text-emerald-600 transition">Inversión y Pagos</a>
+                <a href="#testimonios" class="hover:text-emerald-600 transition">Testimonios</a>
+            </nav>
+
+            <div class="flex items-center gap-3">
+                <a href="https://wa.me/18493536710?text=Hola,%20necesito%20soporte%20técnico%20o%20asistencia" target="_blank" class="hidden sm:inline-flex items-center gap-1.5 text-xs font-bold text-slate-700 bg-slate-100 hover:bg-slate-200 px-3.5 py-2.5 rounded-full transition">
+                    <i class="fa-solid fa-headset text-emerald-600"></i> Soporte
+                </a>
+                <a href="#diagnostico" class="bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-bold px-5 py-2.5 rounded-full shadow-sm transition transform hover:-translate-y-0.5">
+                    Diagnóstico (20 min)
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative overflow-hidden bg-slate-900 text-white pt-16 pb-24 lg:pt-24 lg:pb-32">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-emerald-500/20 blur-[120px] rounded-full pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-7 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 text-xs font-bold uppercase tracking-wider mb-6">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                        Solución desarrollada por Fedora™ Studio • República Dominicana
+                    </div>
+                    
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.1] mb-6">
+                        Deja de perder clientes por <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-300">demoras en responder</span> tu WhatsApp.
+                    </h1>
+                    
+                    <p class="text-lg sm:text-xl text-slate-300 mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        Implementamos un <strong>Agente de Ventas con IA conectado a tu CRM</strong>: respondemos en menos de 1 minuto 24/7, filtramos prospectos, agendamos consultas y avisamos a tu equipo. <strong>Ningún lead se queda sin seguimiento.</strong>
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="#diagnostico" class="inline-flex items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-extrabold text-base px-8 py-4 rounded-xl shadow-lg shadow-emerald-500/25 transition transform hover:-translate-y-0.5">
+                            Agendar Diagnóstico de 20 Min
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#demo-interactiva" class="inline-flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 text-white font-semibold text-base px-8 py-4 rounded-xl border border-slate-700 transition">
+                            Probar demo en vivo
+                        </a>
+                    </div>
+
+                    <div class="mt-8 pt-8 border-t border-slate-800 grid grid-cols-3 gap-4 text-center lg:text-left">
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-extrabold text-white">&lt; 1 min</p>
+                            <p class="text-xs sm:text-sm text-slate-400">Tiempo de respuesta 24/7</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-extrabold text-emerald-400">100%</p>
+                            <p class="text-xs sm:text-sm text-slate-400">Leads registrados en CRM</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-extrabold text-white">30 días</p>
+                            <p class="text-xs sm:text-sm text-slate-400">Piloto de prueba medible</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phone Mockup -->
+                <div class="lg:col-span-5">
+                    <div class="mx-auto max-w-[360px] bg-slate-800 rounded-[2.5rem] p-3 shadow-2xl border-4 border-slate-700">
+                        <div class="bg-[#ECE5DD] rounded-[2rem] overflow-hidden text-slate-800">
+                            <div class="bg-[#075E54] text-white px-4 py-3 flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-full bg-emerald-500 flex items-center justify-center font-bold text-white">
+                                    <i class="fa-solid fa-robot"></i>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-sm leading-tight">Asistente Comercial IA</p>
+                                    <p class="text-[11px] text-emerald-200">En línea • Responde al instante</p>
+                                </div>
+                            </div>
+
+                            <div class="p-4 space-y-3 text-xs sm:text-sm h-[370px] overflow-y-auto flex flex-col justify-between">
+                                <div class="space-y-3">
+                                    <div class="bg-white p-3 rounded-xl rounded-tl-none shadow-sm max-w-[85%]">
+                                        <p>Hola, necesito asesoría migratoria para visa de inversionista o trabajo. ¿Tienen disponibilidad?</p>
+                                        <span class="block text-[10px] text-slate-400 text-right mt-1">9:42 PM</span>
+                                    </div>
+                                    <div class="bg-[#DCF8C6] p-3 rounded-xl rounded-tr-none shadow-sm max-w-[88%] ml-auto">
+                                        <p>¡Hola! 👋 Con gusto le asistimos en nuestro bufete. Para visas de inversión/trabajo realizamos una evaluación de perfil previa.</p>
+                                        <p class="mt-1">¿Podría indicarme si el proceso es para persona física o empresa?</p>
+                                        <span class="block text-[10px] text-emerald-800 text-right mt-1">9:42 PM ✓✓</span>
+                                    </div>
+                                    <div class="bg-white p-3 rounded-xl rounded-tl-none shadow-sm max-w-[85%]">
+                                        <p>Es para mi empresa con capital extranjero.</p>
+                                        <span class="block text-[10px] text-slate-400 text-right mt-1">9:43 PM</span>
+                                    </div>
+                                    <div class="bg-[#DCF8C6] p-3 rounded-xl rounded-tr-none shadow-sm max-w-[88%] ml-auto">
+                                        <p>Excelente. Tenemos cita presencial o virtual mañana a las <strong>11:00 AM</strong> con nuestro especialista migratorio. ¿Le agendamos?</p>
+                                        <span class="block text-[10px] text-emerald-800 text-right mt-1">9:43 PM ✓✓</span>
+                                    </div>
+                                </div>
+
+                                <div class="bg-slate-900/90 text-white p-2.5 rounded-lg text-[11px] flex items-center gap-2 border border-emerald-500/40">
+                                    <i class="fa-solid fa-bell text-emerald-400"></i>
+                                    <span><strong>CRM Actualizado:</strong> Lead calificado + Cita agendada + Abogado notificado.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- DEMO INTERACTIVA -->
+    <section id="demo-interactiva" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-emerald-600 font-bold text-sm uppercase tracking-wider">Prueba Interactiva</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2 mb-4">
+                    Mira cómo responde el agente según tu sector
+                </h2>
+                <p class="text-lg text-slate-600">
+                    Selecciona una industria para ver un ejemplo real de conversación automatizada en WhatsApp:
+                </p>
+
+                <div class="flex flex-wrap justify-center gap-2 mt-6">
+                    <button onclick="cambiarDemo('abogados')" id="btn-abogados" class="px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition bg-emerald-600 text-white shadow-sm">
+                        ⚖️ Bufete / Consultor Migratorio
+                    </button>
+                    <button onclick="cambiarDemo('clinica')" id="btn-clinica" class="px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition bg-slate-100 hover:bg-slate-200 text-slate-700">
+                        🩺 Clínica / Centro Médico
+                    </button>
+                    <button onclick="cambiarDemo('inmobiliaria')" id="btn-inmobiliaria" class="px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition bg-slate-100 hover:bg-slate-200 text-slate-700">
+                        🏢 Inmobiliaria
+                    </button>
+                    <button onclick="cambiarDemo('taller')" id="btn-taller" class="px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition bg-slate-100 hover:bg-slate-200 text-slate-700">
+                        🚗 Taller / Concesionario
+                    </button>
+                </div>
+            </div>
+
+            <div class="max-w-2xl mx-auto bg-slate-900 rounded-3xl p-6 sm:p-8 shadow-2xl border border-slate-800">
+                <div class="bg-[#ECE5DD] rounded-2xl overflow-hidden text-slate-800 shadow-inner">
+                    <div class="bg-[#075E54] text-white px-4 py-3 flex items-center justify-between">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-emerald-500 flex items-center justify-center font-bold text-white">
+                                <i class="fa-solid fa-robot"></i>
+                            </div>
+                            <div>
+                                <p id="demo-titulo" class="font-bold text-sm leading-tight">Asistente • Bufete Jurídico & Migratorio</p>
+                                <p class="text-[11px] text-emerald-200">En línea 24/7</p>
+                            </div>
+                        </div>
+                        <span class="text-xs bg-emerald-600/60 text-white px-2.5 py-1 rounded-full">Modo Demo</span>
+                    </div>
+
+                    <div id="demo-cuerpo" class="p-4 space-y-3 text-xs sm:text-sm h-[320px] overflow-y-auto">
+                        <!-- Inyectado por JS -->
+                    </div>
+                </div>
+                <div class="mt-4 text-center">
+                    <p class="text-xs text-slate-400">
+                        💡 Desarrollado por Fedora™ Studio con flujos inteligentes y conexión a CRM.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTORES IDEALES -->
+    <section id="sectores" class="py-20 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-emerald-600 font-bold text-sm uppercase tracking-wider">Casos de Uso Probados</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2 mb-4">
+                    Resultados diseñados para tu industria en República Dominicana
+                </h2>
+                <p class="text-lg text-slate-600">
+                    Si tu negocio o bufete recibe consultas por WhatsApp y depende de respuestas rápidas, este sistema se paga solo desde el primer mes.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="p-6 rounded-2xl border-2 border-emerald-500 bg-white shadow-sm">
+                    <div class="flex items-center gap-3 mb-3">
+                        <i class="fa-solid fa-scale-balanced text-emerald-600 text-xl"></i>
+                        <h3 class="font-bold text-lg text-slate-900">Bufetes y Consultores Migratorios</h3>
+                    </div>
+                    <p class="text-sm text-slate-600 mb-3">Filtrado previo de visados, corporativo o civil, respuestas a preguntas frecuentes y agenda de consultas.</p>
+                    <p class="text-xs font-bold text-emerald-700 bg-emerald-100 inline-block px-3 py-1 rounded-full">
+                        “Filtre clientes calificados y agende consultas sin perder horas.”
+                    </p>
+                </div>
+
+                <div class="p-6 rounded-2xl border border-slate-200 bg-white transition">
+                    <div class="flex items-center gap-3 mb-3">
+                        <i class="fa-solid fa-stethoscope text-emerald-600 text-xl"></i>
+                        <h3 class="font-bold text-lg text-slate-900">Clínicas y Centros Estéticos</h3>
+                    </div>
+                    <p class="text-sm text-slate-600 mb-3">Agente de citas, triaje inicial de servicios, precios de consulta y recordatorios automáticos.</p>
+                    <p class="text-xs font-bold text-emerald-700 bg-emerald-100/70 inline-block px-3 py-1 rounded-full">
+                        “Reduzca llamadas repetitivas y no pierda pacientes.”
+                    </p>
+                </div>
+
+                <div class="p-6 rounded-2xl border border-slate-200 bg-white transition">
+                    <div class="flex items-center gap-3 mb-3">
+                        <i class="fa-solid fa-building text-emerald-600 text-xl"></i>
+                        <h3 class="font-bold text-lg text-slate-900">Inmobiliarias y Constructoras</h3>
+                    </div>
+                    <p class="text-sm text-slate-600 mb-3">Envío de fichas de propiedades según presupuesto/zona, calificación de financiamiento y agenda de visitas.</p>
+                    <p class="text-xs font-bold text-emerald-700 bg-emerald-100/70 inline-block px-3 py-1 rounded-full">
+                        “Convierta cada consulta en una visita agendada.”
+                    </p>
+                </div>
+
+                <div class="p-6 rounded-2xl border border-slate-200 bg-white transition">
+                    <div class="flex items-center gap-3 mb-3">
+                        <i class="fa-solid fa-car text-emerald-600 text-xl"></i>
+                        <h3 class="font-bold text-lg text-slate-900">Concesionarios y Talleres</h3>
+                    </div>
+                    <p class="text-sm text-slate-600 mb-3">Captación de interesados en vehículos, agendamiento de pruebas de manejo o mantenimiento y seguimiento.</p>
+                    <p class="text-xs font-bold text-emerald-700 bg-emerald-100/70 inline-block px-3 py-1 rounded-full
